@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
 		    ps.setString(2, p);
 		    ResultSet rs = ps.executeQuery();
 		    if(n.equals("admin")&& p.equals("admin1")) {
-		    	RequestDispatcher rd = request.getRequestDispatcher("welcome.jsp");
+		    	RequestDispatcher rd = request.getRequestDispatcher("adminPage.jsp");
 		    	rd.forward(request, response);
 		    }
 		    else if(rs.next()) {
